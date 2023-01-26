@@ -28,7 +28,9 @@ jobs:
       # Runs the build
       - name: Build the test using the Makefile
         run: make
-
+  test:
+    runs-on: ubuntu-latest
+    steps:
       # Runs the test
       - name: Run the test
         run: ./test
